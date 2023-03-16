@@ -93,15 +93,16 @@
 
 
 
-<meta name="description" content="知识总结积累">
-<meta property="og:type" content="website">
-<meta property="og:title" content="mumu@note">
-<meta property="og:url" content="https://iossun.github.io/archives/index.html">
+<meta name="description" content="1.dsym你是如何分析  将对应的xxx.app.dSYM文件以及xxx.app文件以及xxx.crash文件拷贝到同一文件夹中（确保UUID相同）查看xx.app文件的uuid的方法，在terminal中输入命令： dwarfdump –uuid xxx.app/xxx (xxx工程名) 查看xx.app.dSYM文件的uuid的方法，在terminal中输入命令： dwarfdump –uu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS知识点（三）">
+<meta property="og:url" content="https://iossun.github.io/2016/11/30/知识点（四）/index.html">
 <meta property="og:site_name" content="mumu@note">
-<meta property="og:description" content="知识总结积累">
+<meta property="og:description" content="1.dsym你是如何分析  将对应的xxx.app.dSYM文件以及xxx.app文件以及xxx.crash文件拷贝到同一文件夹中（确保UUID相同）查看xx.app文件的uuid的方法，在terminal中输入命令： dwarfdump –uuid xxx.app/xxx (xxx工程名) 查看xx.app.dSYM文件的uuid的方法，在terminal中输入命令： dwarfdump –uu">
+<meta property="og:updated_time" content="2018-01-04T01:27:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mumu@note">
-<meta name="twitter:description" content="知识总结积累">
+<meta name="twitter:title" content="iOS知识点（三）">
+<meta name="twitter:description" content="1.dsym你是如何分析  将对应的xxx.app.dSYM文件以及xxx.app文件以及xxx.crash文件拷贝到同一文件夹中（确保UUID相同）查看xx.app文件的uuid的方法，在terminal中输入命令： dwarfdump –uuid xxx.app/xxx (xxx工程名) 查看xx.app.dSYM文件的uuid的方法，在terminal中输入命令： dwarfdump –uu">
 
 
 
@@ -129,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="https://iossun.github.io/archives/"/>
+  <link rel="canonical" href="https://iossun.github.io/2016/11/30/知识点（四）/"/>
 
 
 
 
 
-  <title>归档 | mumu@note</title>
+  <title>iOS知识点（三） | mumu@note</title>
   
 
 
@@ -160,7 +161,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -254,412 +255,206 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-       
-      
-      OK! 目前共计 41 篇日志。 继续努力。
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://iossun.github.io/2016/11/30/知识点（四）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孙慕">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://www.mny9.com:80/images/users/VFMhAQ0AADE0NDkwMjkwMjA4MDV6_20170628151324.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mumu@note">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">iOS知识点（三）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-30T00:00:00+08:00">
+                2016-11-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/知识点/" itemprop="url" rel="index">
+                    <span itemprop="name">知识点</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2016/11/30/知识点（四）/" class="leancloud_visitors" data-flag-title="iOS知识点（三）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
-      
 
+      
+        <p>1.dsym你是如何分析</p>
+<ul>
+<li><p>将对应的xxx.app.dSYM文件以及xxx.app文件以及xxx.crash文件拷贝到同一文件夹中（确保UUID相同）<br>查看xx.app文件的uuid的方法，在terminal中输入命令：</p>
+<p>dwarfdump –uuid xxx.app/xxx (xxx工程名)</p>
+<p>查看xx.app.dSYM文件的uuid的方法，在terminal中输入命令：</p>
+<p>dwarfdump –uuid xxx.app.dSYM (xxx工程名)</p>
+<p>而.crash的uuid位于，crash日志中的Binary Images:中的第一行尖括号内。如：</p>
+<p>armv7 <8bdeaf1a0b233ac199728c2a0ebb4165></8bdeaf1a0b233ac199728c2a0ebb4165></p>
+</li>
+<li><p>Xcode有自带的symbolicatecrash工具,可以通过dSYM文件将crash文件中的16进制地址转换成可读的函数地址</p>
+<p>执行如下命令，即可正确解析crash文件</p>
+<p>symbolicatecrash xxx.crash xxx.app.dSYM &gt; test.txt</p>
+</li>
+</ul>
+<p>阿里一面<br>1.MVC具有什么样的优势，各个模块之间怎么通信，比如点击Button后，怎么通知Model?<br>2.两个无限长度链表（也就是可能有环）判断有没有交点。<br>3.UItableView的相关优化<br>4.KVO、Notification、delegate各自的优缺点，效率还有使用场景<br>5.如何手动通知KVO<br>6.Objective-C中的copy方法<br>7.runtime中，SEL和IMP的区别<br>8.autoreleasepool的使用场景和原理<br>9.RunLoop的实现原理和数据结构，什么时候用到<br>10.Block为什么会有循环引用问题<br>11.使用GCD如何实现这个需求：A、B、C、三个任务并发，完成后执行任务D。<br>12.NSOperation和GCD区别<br>13.CoreData的使用，如何处理多线程问题<br>14.如何设计图片缓存<br>15.有没有自己设计过控件<br>阿里二面<br>1.怎么判断某个cell是否显示在屏幕上<br>2.进程和线程的区别<br>3.TCP和UDP的区别<br>4.TCP流量控制<br>5.数组和链表的区别<br>6.UIView的生命周期<br>7.如果页面A跳转到页面B,A的viewDidDisappear方法和B的ViewDidAppear方法哪个先调用。<br>8.block循环引用问题<br>9.ARC的本质<br>10.RunLoop的基本概念，他是怎么休眠的？<br>11.Autoreleasepool什么时候释放，在什么场景下使用？<br>12.如何找到字符串中第一个不重复的字符<br>13.哈希表如何处理冲突<br>阿里三面<br>1.dSYM你是如何分析的？<br>2.多线程有哪几种？你更倾向于哪一种？<br>3.单例弊端？<br>4.如何把异步线程转换成同步任务进行单元测试？<br>5.介绍下App启动的完成过程？<br>6.比如App启动过慢，你可能想到的因素有哪些？<br>7.0x8badf00d表示是什么？<br>8.怎么防止反编译？<br>9.说说你遇到到的技术难点？<br>10.说说你了解的第三方原理或底层知识？</p>
+<p>1.介绍下内存的几大区域？<br>2.你是如何组件化解耦的？<br>3.runtime如何通过selector找到对应的IMP地址<br>4.runloop内部实现逻辑？<br>5.你理解的多线程？<br>6.GCD执行原理？<br>7.怎么防止别人反编译你的app？<br>8.YYAsyncLayer如何异步绘制？<br>9.优化你是从哪几方面着手？</p>
+<p>网易一面iOS：<br>1.你一般学习iOS是如何学习的？<br>2.app内存你是如何分析的？<br>3.用过 TableView 吗，平时怎么解决 TableView 滑动卡顿问题的？<br>4.网络模型了解么？有哪几种？说说你的看法？<br>5.block本质是什么？<br>6.KVC机制是如何通过key找到value。<br>7.说说你最熟悉的第三方，知晓其原理么？</p>
+<p>腾讯三面：</p>
+<p>1.OC你了解的锁有哪些?在你回答基础上进行二次提问;</p>
+<p>追问一：自旋和互斥对比?</p>
+<p>追问二：使用以上锁需要注意哪些?</p>
+<p>追问三：用C/OC/C++，任选其一，实现自旋或互斥?口述即可!</p>
+<p>2.内存泄漏可能会出现的几种原因，聊聊你的看法?</p>
+<p>追问一：非OC对象如何处理?</p>
+<p>追问二：地图类内存若泄漏，如何处理?</p>
+<p>追问三：若常用框架出现内存泄漏如何处理?</p>
+<p>3.容错处理你们一般是怎么做的?</p>
+<p>4.项目开始容错处理没做?如何防止拦截潜在的崩溃?</p>
+
+      
+    </div>
+
+    <div>
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2020">2020</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/30/知识点（五）/" rel="next" title="iOS知识点（五）">
+                <i class="fa fa-chevron-left"></i> iOS知识点（五）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/01/SDWebImage/" rel="prev" title="阅读源码（一）- SDWebImage">
+                阅读源码（一）- SDWebImage <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
         </div>
       
-      
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/04/20/MacOS 常用命令/" itemprop="url">
-              
-                <span itemprop="name">MacOS 常用命令</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-04-20T00:00:00+08:00"
-              content="2020-04-20" >
-          04-20
-        </time>
-      </div>
-
-    </header>
+      
+    </footer>
   </article>
 
 
 
-    
-
+    <div class="post-spread">
       
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/04/19/各种实用脚本/" itemprop="url">
-              
-                <span itemprop="name">xCode调试技巧</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-04-19T00:00:00+08:00"
-              content="2020-04-19" >
-          04-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/04/09/逆向环境/" itemprop="url">
-              
-                <span itemprop="name">音视频入门了解</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-04-09T00:00:00+08:00"
-              content="2020-04-09" >
-          04-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2019">2019</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/22/库分析/" itemprop="url">
-              
-                <span itemprop="name">库分析</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-03-22T00:00:00+08:00"
-              content="2019-03-22" >
-          03-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/01/09/音视频入门/" itemprop="url">
-              
-                <span itemprop="name">音视频入门了解</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-01-09T00:00:00+08:00"
-              content="2019-01-09" >
-          01-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2018">2018</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/24/jenkins/" itemprop="url">
-              
-                <span itemprop="name">jenKins 自动化打包笔记</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-24T00:00:00+08:00"
-              content="2018-08-24" >
-          08-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/04/05/Obj-C规范/" itemprop="url">
-              
-                <span itemprop="name">OC代码规范</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-05T00:00:00+08:00"
-              content="2018-04-05" >
-          04-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/07/iOS app各种图片尺寸/" itemprop="url">
-              
-                <span itemprop="name">iOS app各种图片尺寸</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-07T00:00:00+08:00"
-              content="2018-03-07" >
-          03-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/01/tablview刷新列表偏移/" itemprop="url">
-              
-                <span itemprop="name">tablview刷新列表偏移</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-01T00:00:00+08:00"
-              content="2018-03-01" >
-          03-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/02/07/需要再多点责任与担当/" itemprop="url">
-              
-                <span itemprop="name">需要再多点责任与担当</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-07T00:00:00+08:00"
-              content="2018-02-07" >
-          02-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/5/">5</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
+    </div>
+  </div>
 
 
           </div>
@@ -667,6 +462,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -877,11 +676,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
 
 
   

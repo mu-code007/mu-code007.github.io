@@ -1,207 +1,2582 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="知识总结积累">
+<meta property="og:type" content="website">
+<meta property="og:title" content="mumu@note">
+<meta property="og:url" content="https://iossun.github.io/index.html">
+<meta property="og:site_name" content="mumu@note">
+<meta property="og:description" content="知识总结积累">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="mumu@note">
+<meta name="twitter:description" content="知识总结积累">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://iossun.github.io/"/>
+
+
+
+
+
+  <title>mumu@note</title>
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
   
   
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+  
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
 
-  
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">mumu@note</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/03/16/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-03-16T06:49:45.118Z" itemprop="datePublished">2023-03-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/03/16/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+        <p class="site-subtitle">孜孜不倦，逆流而上</p>
       
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/16/hello-world/" data-id="clfargtoq00008vl2fo5ya1xu" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li></ul>
-    </div>
   </div>
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/03/16/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
+</div>
+
+<nav class="site-nav">
+  
 
   
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
+    <ul id="menu" class="menu">
       
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
 
-    </div>
-    <nav id="mobile-nav">
+      
+    </ul>
   
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
+
   
 </nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://iossun.github.io/2020/04/20/MacOS 常用命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孙慕">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://www.mny9.com:80/images/users/VFMhAQ0AADE0NDkwMjkwMjA4MDV6_20170628151324.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mumu@note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/04/20/MacOS 常用命令/" itemprop="url">MacOS 常用命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-20T00:00:00+08:00">
+                2020-04-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/实用/" itemprop="url" rel="index">
+                    <span itemprop="name">实用</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2020/04/20/MacOS 常用命令/" class="leancloud_visitors" data-flag-title="MacOS 常用命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
 
+    <div class="post-body" itemprop="articleBody">
 
-<script src="/js/jquery-3.4.1.min.js"></script>
+      
+      
+
+      
+        
+          
+            <p><strong>免不了终端操作，熟练这些命令还是有必要的</strong></p>
+<h5 id="目录操作"><a href="#目录操作" class="headerlink" title="目录操作"></a>目录操作</h5><table>
+<thead>
+<tr>
+<th style="text-align:center">命令</th>
+<th style="text-align:center">功能</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">mkdir</td>
+<td style="text-align:center">创建一个目录</td>
+<td>mkdir  aaa</td>
+</tr>
+<tr>
+<td style="text-align:center">rmdir</td>
+<td style="text-align:center">删除某个目录</td>
+<td>rmdir   aaa</td>
+</tr>
+<tr>
+<td style="text-align:center">cd</td>
+<td style="text-align:center">改变当前目录</td>
+<td>cd  dirnama</td>
+</tr>
+<tr>
+<td style="text-align:center">pwd</td>
+<td style="text-align:center">显示当前目录</td>
+<td>pwd</td>
+</tr>
+<tr>
+<td style="text-align:center">ls</td>
+<td style="text-align:center">显示当前目录文件</td>
+<td>ls -la</td>
+</tr>
+</tbody>
+</table>
+<h5 id="文件操作"><a href="#文件操作" class="headerlink" title="##### 文件操作"></a>##### 文件操作</h5><table>
+<thead>
+<tr>
+<th style="text-align:center">命令</th>
+<th style="text-align:center">功能</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">cat</td>
+<td style="text-align:center">显示或者链接文件</td>
+<td>cat filename</td>
+</tr>
+<tr>
+<td style="text-align:center">cp</td>
+<td style="text-align:center">复制文件或者目录</td>
+<td>cp dir1  dir2</td>
+</tr>
+<tr>
+<td style="text-align:center">rm</td>
+<td style="text-align:center">删除文件夹或者路径</td>
+<td>rm -r dir1</td>
+</tr>
+<tr>
+<td style="text-align:center">mv</td>
+<td style="text-align:center">改变文件名或路径</td>
+<td>mv file1 file2</td>
+</tr>
+<tr>
+<td style="text-align:center">find</td>
+<td style="text-align:center">使用匹配表达式查找</td>
+<td>find . -name “*.c”</td>
+</tr>
+<tr>
+<td style="text-align:center">file</td>
+<td style="text-align:center">显示文件类型</td>
+<td>file filename</td>
+</tr>
+<tr>
+<td style="text-align:center">open</td>
+<td style="text-align:center">使用默认的程序打开</td>
+<td>open filename (open .打开当前目录)</td>
+</tr>
+</tbody>
+</table>
+<p>##### </p>
+<h5 id="选择操作"><a href="#选择操作" class="headerlink" title="选择操作"></a>选择操作</h5><table>
+<thead>
+<tr>
+<th style="text-align:center">命令</th>
+<th style="text-align:center">功能</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">diff</td>
+<td style="text-align:center">比较两个文件或者文件夹</td>
+<td>diff file1 file2</td>
+</tr>
+</tbody>
+</table>
+<h5 id="进程操作"><a href="#进程操作" class="headerlink" title="进程操作"></a>进程操作</h5><p>##### </p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">命令</th>
+<th style="text-align:center">功能</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ps</td>
+<td style="text-align:center">显示进程当前状态</td>
+<td>ps -ef \</td>
+<td>grep ssh</td>
+</tr>
+<tr>
+<td style="text-align:center">kill</td>
+<td style="text-align:center">终止进程</td>
+<td>kill -9 78979</td>
+</tr>
+</tbody>
+</table>
+<p>##### </p>
+<p>##### </p>
+<p>##### </p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://iossun.github.io/2020/04/19/各种实用脚本/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孙慕">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://www.mny9.com:80/images/users/VFMhAQ0AADE0NDkwMjkwMjA4MDV6_20170628151324.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mumu@note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/04/19/各种实用脚本/" itemprop="url">xCode调试技巧</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-19T00:00:00+08:00">
+                2020-04-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/实用/" itemprop="url" rel="index">
+                    <span itemprop="name">实用</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2020/04/19/各种实用脚本/" class="leancloud_visitors" data-flag-title="xCode调试技巧">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h5 id="编译全架构framework"><a href="#编译全架构framework" class="headerlink" title="编译全架构framework"></a>编译全架构framework</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 输出保存合并的 Framework 文件夹路径，为当前工程文件下的 XXX-universal 文件夹</span></div><div class="line">UNIVERSAL_OUTPUT=$&#123;SRCROOT&#125;/$&#123;CONFIGURATION&#125;-universal</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> xcodebuild 创建 真机 &amp; 虚拟 架构的 Framework</span></div><div class="line">xcodebuild -configuration "$&#123;CONFIGURATION&#125;" -target "$&#123;PROJECT_NAME&#125;" -sdk iphoneos ONLY_ACTIVE_ARCH=NO   BUILD_DIR="$&#123;BUILD_DIR&#125;" BUILD_ROOT="$&#123;BUILD_ROOT&#125;" clean build</div><div class="line">xcodebuild -configuration "$&#123;CONFIGURATION&#125;" -target "$&#123;PROJECT_NAME&#125;" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR="$&#123;BUILD_DIR&#125;" BUILD_ROOT="$&#123;BUILD_ROOT&#125;" clean build</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 删除可能输入文件路径已有的文件 &amp; 文件夹</span></div><div class="line">if [ -d "$&#123;UNIVERSAL_OUTPUT&#125;" ]</div><div class="line">then</div><div class="line">rm -rf "$&#123;UNIVERSAL_OUTPUT&#125;"</div><div class="line">fi</div><div class="line">mkdir -p "$&#123;UNIVERSAL_OUTPUT&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 将其中一个架构生成的 Framework 拷贝到 输入路径文件夹下（注意如果没有这个 Framework 是无法进行合并的）</span></div><div class="line">cp -R "$&#123;BUILD_DIR&#125;/$&#123;CONFIGURATION&#125;-iphoneos/$&#123;PROJECT_NAME&#125;.framework" "$&#123;UNIVERSAL_OUTPUT&#125;/"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 通过 lipo 进行合并</span></div><div class="line">lipo -create "$&#123;BUILD_DIR&#125;/$&#123;CONFIGURATION&#125;-iphonesimulator/$&#123;PROJECT_NAME&#125;.framework/$&#123;PROJECT_NAME&#125;" "$&#123;BUILD_DIR&#125;/$&#123;CONFIGURATION&#125;-iphoneos/$&#123;PROJECT_NAME&#125;.framework/$&#123;PROJECT_NAME&#125;" -output "$&#123;UNIVERSAL_OUTPUT&#125;/$&#123;PROJECT_NAME&#125;.framework/$&#123;PROJECT_NAME&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 打开合并的 Framework 所在的文件夹</span></div><div class="line">open "$&#123;UNIVERSAL_OUTPUT&#125;"</div></pre></td></tr></table></figure>
+<h5 id="全架构静态库-a"><a href="#全架构静态库-a" class="headerlink" title="全架构静态库 .a"></a>全架构静态库 .a</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div></pre></td><td class="code"><pre><div class="line">if [ "$&#123;ACTION&#125;" = "build" ]</div><div class="line">then</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">要build的target名</span></div><div class="line">target_Name=$&#123;PROJECT_NAME&#125;</div><div class="line">    echo "target_Name=$&#123;target_Name&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">build之后的文件夹路径</span></div><div class="line">build_DIR=$&#123;SRCROOT&#125;/build</div><div class="line">    echo "build_DIR=$&#123;build_DIR&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">真机build生成的头文件的文件夹路径</span></div><div class="line">DEVICE_DIR_INCLUDE=$&#123;build_DIR&#125;/Release-iphoneos/include/$&#123;PROJECT_NAME&#125;</div><div class="line">    echo "DEVICE_DIR_INCLUDE=$&#123;DEVICE_DIR_INCLUDE&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">真机build生成的.a文件路径</span></div><div class="line">DEVICE_DIR_A=$&#123;build_DIR&#125;/Release-iphoneos/lib$&#123;PROJECT_NAME&#125;.a</div><div class="line">    echo "DEVICE_DIR_A=$&#123;DEVICE_DIR_A&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">模拟器build生成的.a文件路径</span></div><div class="line">SIMULATOR_DIR_A=$&#123;build_DIR&#125;/Release-iphonesimulator/lib$&#123;PROJECT_NAME&#125;.a</div><div class="line">    echo "SIMULATOR_DIR_A=$&#123;SIMULATOR_DIR_A&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">目标文件夹路径</span></div><div class="line">INSTALL_DIR=$&#123;SRCROOT&#125;/Products/$&#123;PROJECT_NAME&#125;</div><div class="line">    echo "INSTALL_DIR=$&#123;INSTALL_DIR&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">目标头文件文件夹路径</span></div><div class="line">INSTALL_DIR_Headers=$&#123;SRCROOT&#125;/Products/$&#123;PROJECT_NAME&#125;/Headers</div><div class="line">    echo "INSTALL_DIR_Headers=$&#123;INSTALL_DIR_Headers&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">目标.a路径</span></div><div class="line">INSTALL_DIR_A=$&#123;SRCROOT&#125;/Products/$&#123;PROJECT_NAME&#125;/lib$&#123;PROJECT_NAME&#125;.a</div><div class="line">    echo "INSTALL_DIR_A=$&#123;INSTALL_DIR_A&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">判断build文件夹是否存在，存在则删除</span></div><div class="line">if [ -d "$&#123;build_DIR&#125;" ]</div><div class="line">then</div><div class="line">rm -rf "$&#123;build_DIR&#125;"</div><div class="line">fi</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">判断目标文件夹是否存在，存在则删除该文件夹</span></div><div class="line">if [ -d "$&#123;INSTALL_DIR&#125;" ]</div><div class="line">then</div><div class="line">rm -rf "$&#123;INSTALL_DIR&#125;"</div><div class="line">fi</div><div class="line"><span class="meta">#</span><span class="bash">创建目标文件夹</span></div><div class="line">mkdir -p "$&#123;INSTALL_DIR&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">build之前clean一下</span></div><div class="line">xcodebuild -target $&#123;target_Name&#125; clean</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">模拟器build</span></div><div class="line">xcodebuild -target $&#123;target_Name&#125; -configuration Release -sdk iphonesimulator</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">真机build</span></div><div class="line">xcodebuild -target $&#123;target_Name&#125; -configuration Release -sdk iphoneos</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">复制头文件到目标文件夹</span></div><div class="line">cp -R "$&#123;DEVICE_DIR_INCLUDE&#125;" "$&#123;INSTALL_DIR_Headers&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">合成模拟器和真机.a包</span></div><div class="line">lipo -create "$&#123;DEVICE_DIR_A&#125;" "$&#123;SIMULATOR_DIR_A&#125;" -output "$&#123;INSTALL_DIR_A&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">打开目标文件夹</span></div><div class="line">open "$&#123;INSTALL_DIR&#125;"</div><div class="line"></div><div class="line">fi</div></pre></td></tr></table></figure>
+<h5 id="自动打包"><a href="#自动打包" class="headerlink" title="自动打包"></a>自动打包</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div></pre></td><td class="code"><pre><div class="line">if [ "$&#123;ACTION&#125;" = "build" ]</div><div class="line">then</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">要build的target名</span></div><div class="line">target_Name=$&#123;PROJECT_NAME&#125;</div><div class="line">    echo "target_Name=$&#123;target_Name&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">build之后的文件夹路径</span></div><div class="line">build_DIR=$&#123;SRCROOT&#125;/build</div><div class="line">    echo "build_DIR=$&#123;build_DIR&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">真机build生成的头文件的文件夹路径</span></div><div class="line">DEVICE_DIR_INCLUDE=$&#123;build_DIR&#125;/Release-iphoneos/include/$&#123;PROJECT_NAME&#125;</div><div class="line">    echo "DEVICE_DIR_INCLUDE=$&#123;DEVICE_DIR_INCLUDE&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">真机build生成的.a文件路径</span></div><div class="line">DEVICE_DIR_A=$&#123;build_DIR&#125;/Release-iphoneos/lib$&#123;PROJECT_NAME&#125;.a</div><div class="line">    echo "DEVICE_DIR_A=$&#123;DEVICE_DIR_A&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">模拟器build生成的.a文件路径</span></div><div class="line">SIMULATOR_DIR_A=$&#123;build_DIR&#125;/Release-iphonesimulator/lib$&#123;PROJECT_NAME&#125;.a</div><div class="line">    echo "SIMULATOR_DIR_A=$&#123;SIMULATOR_DIR_A&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">目标文件夹路径</span></div><div class="line">INSTALL_DIR=$&#123;SRCROOT&#125;/Products/$&#123;PROJECT_NAME&#125;</div><div class="line">    echo "INSTALL_DIR=$&#123;INSTALL_DIR&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">目标头文件文件夹路径</span></div><div class="line">INSTALL_DIR_Headers=$&#123;SRCROOT&#125;/Products/$&#123;PROJECT_NAME&#125;/Headers</div><div class="line">    echo "INSTALL_DIR_Headers=$&#123;INSTALL_DIR_Headers&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">目标.a路径</span></div><div class="line">INSTALL_DIR_A=$&#123;SRCROOT&#125;/Products/$&#123;PROJECT_NAME&#125;/lib$&#123;PROJECT_NAME&#125;.a</div><div class="line">    echo "INSTALL_DIR_A=$&#123;INSTALL_DIR_A&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">判断build文件夹是否存在，存在则删除</span></div><div class="line">if [ -d "$&#123;build_DIR&#125;" ]</div><div class="line">then</div><div class="line">rm -rf "$&#123;build_DIR&#125;"</div><div class="line">fi</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">判断目标文件夹是否存在，存在则删除该文件夹</span></div><div class="line">if [ -d "$&#123;INSTALL_DIR&#125;" ]</div><div class="line">then</div><div class="line">rm -rf "$&#123;INSTALL_DIR&#125;"</div><div class="line">fi</div><div class="line"><span class="meta">#</span><span class="bash">创建目标文件夹</span></div><div class="line">mkdir -p "$&#123;INSTALL_DIR&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">build之前clean一下</span></div><div class="line">xcodebuild -target $&#123;target_Name&#125; clean</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">模拟器build</span></div><div class="line">xcodebuild -target $&#123;target_Name&#125; -configuration Release -sdk iphonesimulator</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">真机build</span></div><div class="line">xcodebuild -target $&#123;target_Name&#125; -configuration Release -sdk iphoneos</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">复制头文件到目标文件夹</span></div><div class="line">cp -R "$&#123;DEVICE_DIR_INCLUDE&#125;" "$&#123;INSTALL_DIR_Headers&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">合成模拟器和真机.a包</span></div><div class="line">lipo -create "$&#123;DEVICE_DIR_A&#125;" "$&#123;SIMULATOR_DIR_A&#125;" -output "$&#123;INSTALL_DIR_A&#125;"</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">打开目标文件夹</span></div><div class="line">open "$&#123;INSTALL_DIR&#125;"</div><div class="line"></div><div class="line">fi</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://iossun.github.io/2020/04/09/逆向环境/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孙慕">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://www.mny9.com:80/images/users/VFMhAQ0AADE0NDkwMjkwMjA4MDV6_20170628151324.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mumu@note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/04/09/逆向环境/" itemprop="url">音视频入门了解</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-09T00:00:00+08:00">
+                2020-04-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/逆向相关/" itemprop="url" rel="index">
+                    <span itemprop="name">逆向相关</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2020/04/09/逆向环境/" class="leancloud_visitors" data-flag-title="音视频入门了解">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h5 id="一、一键砸壳"><a href="#一、一键砸壳" class="headerlink" title="一、一键砸壳"></a>一、一键砸壳</h5><ol>
+<li>手机安装frida</li>
+<li>Mac安装frida</li>
+<li>下载frida-ios-dump</li>
+<li>使用手机登录ssh</li>
+<li>砸壳</li>
+</ol>
+<p>#####二、手机越狱 </p>
+<p>​    手机安装 unc0ver 一键越狱</p>
+<h5 id="三、重签名"><a href="#三、重签名" class="headerlink" title="三、重签名"></a>三、重签名</h5><p>​     安装<strong>MonkeyDev</strong></p>
+<h5 id="四、查看类"><a href="#四、查看类" class="headerlink" title="四、查看类"></a>四、查看类</h5><p>​     安装<strong>class-dump</strong> （或者hopper v4）  </p>
+<p>​      <code>Class-dump -H  &quot;Mach-O文件路径&quot; -O &quot;导出headers文件的路径&quot;</code></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://iossun.github.io/2019/03/22/库分析/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孙慕">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://www.mny9.com:80/images/users/VFMhAQ0AADE0NDkwMjkwMjA4MDV6_20170628151324.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mumu@note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/22/库分析/" itemprop="url">库分析</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-22T00:00:00+08:00">
+                2019-03-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/实用/" itemprop="url" rel="index">
+                    <span itemprop="name">实用</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/22/库分析/" class="leancloud_visitors" data-flag-title="库分析">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>-fvisibility=default|internal|hidden|protected</p>
+<p>gcc的visibility是说，如果编译的时候用了这个属性，那么动态库的符号都是hidden的，除非强制声明。</p>
+<p>sdkA.h + sdkB.h  合并 动态AB.framework, visibility会带上子库的visibility，很可能导致<strong>AB.framework</strong> 找不到符号</p>
+<h5 id="lipo命令"><a href="#lipo命令" class="headerlink" title="lipo命令"></a>lipo命令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 查看库CPU架构</span></div><div class="line">lipo -info  xxx/xxx/xx.a</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 合并静态库</span></div><div class="line">lipo  -create  libname-armv7.a   libname-armv7s.a   libname-i386.a  -output  libname.a</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> framework 合并(例util.framework)</span></div><div class="line">lipo -create  arm7/util.framework/util  i386/util.framework/util   -output   util.framework</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 拆分静态库</span></div><div class="line">lipo  -thin  armv7 libname.a  -output  libname-armv7.a</div></pre></td></tr></table></figure>
+<h5 id="符号查看（工具如：hopper）"><a href="#符号查看（工具如：hopper）" class="headerlink" title="符号查看（工具如：hopper）"></a>符号查看（工具如：hopper）</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 查看所有的符号</span></div><div class="line">ar -t libsdkA.a</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 分离出目标文件</span></div><div class="line">ar -x  aaaa.a</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 删除.a 中指定.o</span></div><div class="line">ar -d libsdkA.a sdkA.o</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 追加成员</span></div><div class="line">ar -q libsdkA.a sdkAA.o</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 从.o文件中合并成静态库</span></div><div class="line">libtool -static -o ../aaa.a *.o</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 查看符号是否存在类中</span></div><div class="line">nm libsdkA.a | grep afun</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 查看 .o</span></div><div class="line">nm –C aaaa.o</div></pre></td></tr></table></figure>
+<h5 id="编译指令"><a href="#编译指令" class="headerlink" title="编译指令"></a>编译指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 编译.o</span></div><div class="line">g++ -c myMath.cpp</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> ar工具将目标文件打包成.a静态库文件</span></div><div class="line">ar -crv libstaticmath.a StaticMath.o</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash">  -L：表示要连接的库所在目录 -l：指定链接时需要的动态库，编译器查找动态连接库时有隐含的命名规则，即在给出的名字前面加上lib，后面加上.a或.so来确定库的名称。</span></div><div class="line">g++ Test.cpp -L../StaticLibrary -lstaticmath</div></pre></td></tr></table></figure>
+<h5 id="QA"><a href="#QA" class="headerlink" title="QA"></a>QA</h5><h6 id="一-：静态库符号问题，换动态库"><a href="#一-：静态库符号问题，换动态库" class="headerlink" title="一 ：静态库符号问题，换动态库"></a>一 ：静态库符号问题，换动态库</h6><p>同一工程应用相同符号的两个库：</p>
+<ol>
+<li><p>两个静态库，导致符号冲突，linker 阶段，对各自.o,linker到执行文件，导致冲突</p>
+</li>
+<li><p>一个动态，一个静态。 同时linker到程序，相同的符号，外部会优先调用到静态库（静态库优先级高），动态库内部能正常调用到自己的 </p>
+</li>
+</ol>
+<h6 id="二：静态库包远大于动态库-动态库是linker后的执行文件"><a href="#二：静态库包远大于动态库-动态库是linker后的执行文件" class="headerlink" title="二：静态库包远大于动态库 (动态库是linker后的执行文件)"></a>二：静态库包远大于动态库 (动态库是linker后的执行文件)</h6><ol>
+<li><p>用于链接的信息被剔除，比如说类引用、函数名等，字符信息中的函数名字等在链接时会放入链接表，用于查找地址，但不打入二进制文件；</p>
+</li>
+<li><p>调试用的信息比如符号串、代码行号等不会打入二进制包，而是额外生成符号表；</p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://iossun.github.io/2019/01/09/音视频入门/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孙慕">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://www.mny9.com:80/images/users/VFMhAQ0AADE0NDkwMjkwMjA4MDV6_20170628151324.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mumu@note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/09/音视频入门/" itemprop="url">音视频入门了解</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-09T00:00:00+08:00">
+                2019-01-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/音视频/" itemprop="url" rel="index">
+                    <span itemprop="name">音视频</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/01/09/音视频入门/" class="leancloud_visitors" data-flag-title="音视频入门了解">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="声音的物理性质"><a href="#声音的物理性质" class="headerlink" title="声音的物理性质"></a>声音的物理性质</h2><p>​      声音是物体振动产生，声音是一种波，声波的三要素是频率、振幅和波形，频率代表音阶的高低，振幅代表响度，波形代表音色。</p>
+<p>​      频率越高，波长就越短。低频声响的波长则较长。</p>
+<p>​      声音还有一些性质：<strong>声音的传播介质  回声  共鸣</strong></p>
+<h2 id="数字音频"><a href="#数字音频" class="headerlink" title="数字音频"></a>数字音频</h2><p>​      大自然中的声音，他的形态是一种波。我们通过采样，将这种波量化成数据，记录下来，如下图所示：</p>
+<p><img src="https://github.com/iossun/bolgImage/raw/master/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%85%A5%E9%97%A8/1122433-006d79c99d3ca6c5.png" alt=""></p>
+<p><img src="https://github.com/iossun/bolgImage/raw/master/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%85%A5%E9%97%A8/1122433-261c3646f3cf1b21.png" alt=""></p>
+<p>​      如上图所示，采样的数据并不能完整的还原出原来的波形，只能做到尽量接近原波形。并且采样率（采样的次数）越高，波形越接近原波形。不过采样的次数增多，必然会导致存储的数据量要增加，所以我们不可能无限提升采样率。经过长期的研究人们发现，当采样率等于波形中最高频率的2倍时，已经足够将波形还原到可接受的程度了。这个频率称为<a href="https://link.jianshu.com?t=http://baike.baidu.com/link?url=uznAc6udCar8O7I3kwBt_QZhRByp4_79Y-TaGDoCAmp_jCYyNCFqkLAdZ_mVwkmbKxuhLwEM4gErQy01HwkgL_" target="_blank" rel="external">奈奎斯特频率</a>。人耳能接受的最高频率为20kHz，所以只要采样率超过40kHz，就可以呈现出可接受的声音。目前常见的CD采样率为44.1kHz。</p>
+<p>​      除了采样率之外，音频采样还有一个重要参数叫做<a href="https://link.jianshu.com?t=http://zhidao.baidu.com/link?url=Af7OKj4bCFEp5LK3nGgIrrAOcv8wP0onN_u_fevah0ENxmSQl-HOSGeylSrpJrp6IO1ETCtGA6IKUCXhGiuAwHVvjovypCOYar_zOQaXnQa" target="_blank" rel="external">音频的位元深度</a>。表示用多少位(bit)定义线性维度上的离散度来保存一个音频样本。位数越高，离散度越多，表示的声音越精确（音质越好）。一般来说16bit比较常见，可以表示65536个离散度。</p>
+<p>​       一个音频文件的体积，有如下算法：<code>体积=采样率*位元深度*音道数*时间</code>。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/09/音视频入门/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://iossun.github.io/2018/08/24/jenkins/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孙慕">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://www.mny9.com:80/images/users/VFMhAQ0AADE0NDkwMjkwMjA4MDV6_20170628151324.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mumu@note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/24/jenkins/" itemprop="url">jenKins 自动化打包笔记</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-24T00:00:00+08:00">
+                2018-08-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/坑/" itemprop="url" rel="index">
+                    <span itemprop="name">坑</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/08/24/jenkins/" class="leancloud_visitors" data-flag-title="jenKins 自动化打包笔记">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h5 id="iOS-执行shell"><a href="#iOS-执行shell" class="headerlink" title="iOS 执行shell"></a>iOS 执行shell</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">IPA_PATH=&quot;/Users/sunmu/Desktop/jenkins/ipa/FUP2A-ART/FUP2A.ipa&quot;</div><div class="line">security unlock-keychain -p 123456 ~/Library/Keychains/login.keychain</div><div class="line">xcodebuild archive -workspace /Users/sunmu/Desktop/jenkins/workspace/FUP2A-ART/FUP2A.xcworkspace -scheme FUP2A -configuration Release -sdk iphoneos -archivePath /Users/sunmu/Desktop/jenkins/xcarchive/FUP2A-ART.xcarchive</div><div class="line"></div><div class="line">xcodebuild -exportArchive -archivePath /Users/sunmu/Desktop/jenkins/xcarchive/FUP2A-ART.xcarchive -exportPath /Users/sunmu/Desktop/jenkins/ipa/FUP2A-ART -exportOptionsPlist /Users/sunmu/Desktop/jenkins/workspace/FULiveDemo/FULiveDemo/Info.plist -allowProvisioningUpdates</div><div class="line"></div><div class="line">#蒲公英打包</div><div class="line">curl -F &quot;file=@$&#123;IPA_PATH&#125;&quot; \</div><div class="line">-F &quot;uKey=264c4e784d1cb476257b6cd1987b0e9f&quot; \</div><div class="line">-F &quot;_api_key=5a68a054c714f02d7cad518b8cff00ca&quot; \</div><div class="line">-F &quot;isPublishToPublic=2&quot; \</div><div class="line">http://www.pgyer.com/apiv1/app/upload</div><div class="line"></div><div class="line">curl  &quot;https://oapi.dingtalk.com/robot/send?access_token=f483142b7ce6bc7f24da354a09ec7541af2e39f2ae0345c78cef1ddbf86be535&quot; -H &quot;Content-Type: application/json&quot; -d &quot;&#123;\&quot;msgtype\&quot;: \&quot;markdown\&quot;, \&quot;markdown\&quot;: &#123;\&quot;title\&quot;: \&quot;FUP2A-ART\&quot;,\&quot;text\&quot;:\&quot; &gt; [iOS\u70b9\u51fb\u8fd9\u91cc\u8fdb\u884c\u5b89\u88c5](https://www.pgyer.com/DigiMe-Art)\u6216\u624b\u673a\u626b\u63cf\u4e8c\u7ef4\u7801\u8fdb\u884c\u5b89\u88c5 \n &gt; ## ![this](https://www.pgyer.com/app/qrcode/DigiMe-Art/) \n &gt; * \u76ee\u524d\u53ea\u652f\u6301\u5185\u90e8\u6d4b\u8bd5\u8bbe\u5907\u548c\u90e8\u5206\u540c\u4e8b\u7684\u4e2a\u4eba\u8bbe\u5907\uff0c\u5982\u65e0\u6cd5\u5b89\u88c5\u8bf7\u8054\u7cfb\u79fb\u52a8\u5f00\u53d1\u90e8\u5b59\u6155\u540c\u5b66 \n \&quot;&#125;&#125;&quot;</div><div class="line">curl  &quot;https://oapi.dingtalk.com/robot/send?access_token=5eef86f931f40f803ae7a3b3395404aea36cd915d53d2ca846412499cf628595&quot; -H &quot;Content-Type: application/json&quot; -d &quot;&#123;\&quot;msgtype\&quot;: \&quot;markdown\&quot;, \&quot;markdown\&quot;: &#123;\&quot;title\&quot;: \&quot;FUP2A-ART\&quot;,\&quot;text\&quot;:\&quot; &gt; [iOS\u70b9\u51fb\u8fd9\u91cc\u8fdb\u884c\u5b89\u88c5](https://www.pgyer.com/DigiMe-Art)\u6216\u624b\u673a\u626b\u63cf\u4e8c\u7ef4\u7801\u8fdb\u884c\u5b89\u88c5 \n &gt; ## ![this](https://www.pgyer.com/app/qrcode/DigiMe-Art/) \n &gt; * \u76ee\u524d\u53ea\u652f\u6301\u5185\u90e8\u6d4b\u8bd5\u8bbe\u5907\u548c\u90e8\u5206\u540c\u4e8b\u7684\u4e2a\u4eba\u8bbe\u5907\uff0c\u5982\u65e0\u6cd5\u5b89\u88c5\u8bf7\u8054\u7cfb\u79fb\u52a8\u5f00\u53d1\u90e8\u5b59\u6155\u540c\u5b66 \n \&quot;&#125;&#125;&quot;</div></pre></td></tr></table></figure>
+<h5 id="Android-执行shell"><a href="#Android-执行shell" class="headerlink" title="Android 执行shell"></a>Android 执行shell</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">chmod +x gradlew</div><div class="line">./gradlew tasks </div><div class="line">./gradlew assembleDebug</div><div class="line"></div><div class="line">#蒲公英打包</div><div class="line">IPA_PATH=&quot;/Users/sunmu/Desktop/jenkins/workspace/FUP2ArtDemoDroid/app/build/outputs/apk/debug/app-debug.apk&quot;</div><div class="line">curl -F &quot;file=@$&#123;IPA_PATH&#125;&quot; \</div><div class="line">-F &quot;uKey=264c4e784d1cb476257b6cd1987b0e9f&quot; \</div><div class="line">-F &quot;_api_key=5a68a054c714f02d7cad518b8cff00ca&quot; \</div><div class="line">-F &quot;isPublishToPublic=2&quot; \</div><div class="line">http://www.pgyer.com/apiv1/app/upload</div><div class="line"></div><div class="line">curl  &quot;https://oapi.dingtalk.com/robot/send?access_token=f483142b7ce6bc7f24da354a09ec7541af2e39f2ae0345c78cef1ddbf86be535&quot; -H &quot;Content-Type: application/json&quot; -d &quot;&#123;\&quot;msgtype\&quot;: \&quot;markdown\&quot;, \&quot;markdown\&quot;: &#123;\&quot;title\&quot;: \&quot;FUP2A-ART\&quot;,\&quot;text\&quot;:\&quot; &gt; [Android\u70b9\u51fb\u8fd9\u91cc\u8fdb\u884c\u5b89\u88c5](https://www.pgyer.com/o7PH)\u6216\u624b\u673a\u626b\u63cf\u4e8c\u7ef4\u7801\u8fdb\u884c\u5b89\u88c5 \n &gt; ## ![this](https://www.pgyer.com/app/qrcode/o7PH/) \n &gt; * \u5982\u65e0\u6cd5\u5b89\u88c5\u8bf7\u8054\u7cfb\u79fb\u52a8\u5f00\u53d1\u90e8\u5b59\u6155\u540c\u5b66 \n \&quot;&#125;&#125;&quot;</div><div class="line">curl  &quot;https://oapi.dingtalk.com/robot/send?access_token=5eef86f931f40f803ae7a3b3395404aea36cd915d53d2ca846412499cf628595&quot; -H &quot;Content-Type: application/json&quot; -d &quot;&#123;\&quot;msgtype\&quot;: \&quot;markdown\&quot;, \&quot;markdown\&quot;: &#123;\&quot;title\&quot;: \&quot;FUP2A-ART\&quot;,\&quot;text\&quot;:\&quot; &gt; [Android\u70b9\u51fb\u8fd9\u91cc\u8fdb\u884c\u5b89\u88c5](https://www.pgyer.com/o7PH)\u6216\u624b\u673a\u626b\u63cf\u4e8c\u7ef4\u7801\u8fdb\u884c\u5b89\u88c5 \n &gt; ## ![this](https://www.pgyer.com/app/qrcode/o7PH/) \n &gt; * \u5982\u65e0\u6cd5\u5b89\u88c5\u8bf7\u8054\u7cfb\u79fb\u52a8\u5f00\u53d1\u90e8\u5b59\u6155\u540c\u5b66 \n \&quot;&#125;&#125;&quot;</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://iossun.github.io/2018/04/05/Obj-C规范/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孙慕">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://www.mny9.com:80/images/users/VFMhAQ0AADE0NDkwMjkwMjA4MDV6_20170628151324.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mumu@note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/05/Obj-C规范/" itemprop="url">OC代码规范</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-05T00:00:00+08:00">
+                2018-04-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Objective—C/" itemprop="url" rel="index">
+                    <span itemprop="name">Objective—C</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/04/05/Obj-C规范/" class="leancloud_visitors" data-flag-title="OC代码规范">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="提要"><a href="#提要" class="headerlink" title="提要"></a>提要</h2><ol>
+<li>所有规范（试行）基于苹果官方<a href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html" target="_blank" rel="external">编码准则</a>。若有冲突之处，以官方为主。</li>
+</ol>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p>Ⅰ、<a href="#Ⅰ">代码规范</a></p>
+<p>Ⅱ、<a href="#Ⅱ">文件规范</a></p>
+<p>Ⅲ、<a href="#Ⅲ">TODO:</a></p>
+<h1 id="Ⅰ、代码规范"><a href="#Ⅰ、代码规范" class="headerlink" title="Ⅰ、代码规范"></a>Ⅰ、<span id="Ⅰ">代码规范</span></h1><h2 id="一、命名规范"><a href="#一、命名规范" class="headerlink" title="一、命名规范"></a>一、命名规范</h2><ul>
+<li><p><strong>变量和属性:</strong>遵循小驼峰规则，且<code>*</code>紧跟变量</p>
+<blockquote>
+<ol>
+<li>NSString *userName;</li>
+<li>@property (nonatimic, strong) NSString *nickName;</li>
+<li>临时变量禁止使用下划线开头！因为Default Synthesis生成的成员变量就是下划线打头的，避免可能存在的冲突！</li>
+<li>关于NSString的定义：明显预知的类型可以不加后缀，如userName可以预判是String类型；但不可预判的必须加，如URL string和URL对象需要添加后缀。</li>
+<li>关于全局类的属性，变量。定义时需要无歧义描述，如数组定义：cells，cellArray。</li>
+</ol>
+</blockquote>
+</li>
+<li><p><strong>属性的访问:</strong>需使用点语法执行</p>
+<blockquote>
+<p>self.userName = @”john”;</p>
+</blockquote>
+</li>
+<li><p><strong>方法的访问:</strong>需使用方括号访问</p>
+<blockquote>
+<p>count = [self.userName length];</p>
+</blockquote>
+</li>
+<li><p><strong>类名:</strong>遵循大驼峰式命名法，需要带上前缀。</p>
+<blockquote>
+<p>@interface UITextView</p>
+<p>视图类：<code>**View</code>；控制器类：<code>**Controller</code>；实体模型：<code>**Model</code>或者<code>**Entity</code>。依此类推之。</p>
+<p>类似的，对于Protocol、Struct、const命名规则，与之相同。</p>
+</blockquote>
+</li>
+<li><p><strong>方法名:</strong>的每一部分都必须遵循小驼峰命名法；若参数过长，则每个参数占用一行且以<code>:</code>对齐。（依据Xcode提示即可）</p>
+<blockquote>
+<p>- (NSRange)rangeOfString:(NSString *)aString options:(NSStringCompareOptions)mask;</p>
+<p>方法名详细参考:<a href="http://cocoadevcentral.com/articles/000083.php" target="_blank" rel="external">Cocoa Style for Objective-C: Part II</a></p>
+<p>特例：方法名以特殊大写字母开头。如PDFXXX、TIFFXX等。</p>
+<p>行为方法：以动词开头，宜使用诸如<code>can</code>、<code>should</code>、<code>will</code>等情态动词，避免使用<code>do</code>、<code>does</code>。</p>
+<p>返回值方法：避免使用<code>get</code>开头。</p>
+</blockquote>
+</li>
+<li><p><strong>构造方法:</strong>返回实例类型为<code>instancetype</code>而不再是<code>id</code>类型。</p>
+<blockquote>
+<p>便于编译器正确推断结果类型</p>
+</blockquote>
+</li>
+<li><p><strong>函数:</strong>其实就是所谓的C全局函数，一般采用<code>前缀+名字</code>的方式来命名,其中名字部分采用大驼峰式命名法。</p>
+<blockquote>
+<ol>
+<li>NSString *NSHomeDirectory(void);</li>
+<li>NSString <em>NSHomeDirectoryForUser(NSString </em>userName);</li>
+</ol>
+</blockquote>
+</li>
+<li><p><strong>常量:</strong>使用静态变量的方式来定义数值或者字符串常量，而不要使用预编译的方式。好处是前者存在类型检查，而后者只是简单的文本替换。</p>
+<blockquote>
+<p>NSString * const kMyConstVar = @”myConstVar”;</p>
+</blockquote>
+</li>
+<li><p><strong>枚举:</strong>使用苹果提供的宏来定义枚举,NS_ENUM用来定义普通的枚举，NS_OPTIONS用来定义bitmask。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">typedef NS_ENUM(NSInteger, UIViewAnimationTransition) &#123;</div><div class="line"> 	   UIViewAnimationTransitionNone,</div><div class="line"> 	   UIViewAnimationTransitionFlipFromLeft,</div><div class="line"> 	   ...</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">typedef NS_OPTIONS(NSUInteger, UIViewAutoresizing) &#123;</div><div class="line">    UIViewAutoresizingNone                 = 0,</div><div class="line">    UIViewAutoresizingFlexibleLeftMargin   = 1 &lt;&lt; 0,</div><div class="line">    UIViewAutoresizingFlexibleWidth        = 1 &lt;&lt; 1,</div><div class="line">    ...</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Notification:</strong>通知必须以字符串常量的方式存在。<br>命名遵循如下组成结构<br><code>[Name of associated class] + [Did | Will] + [UniquePartOfName] + Notification</code>。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">//TBHDXXX.h</div><div class="line">	//如果通知名在外部需要使用，则需要在头文件中进行extern声明</div><div class="line">	extern NSString * const TBHDXXXDidReceivedNotification;</div></pre></td></tr></table></figure>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//TBHDXXX.m</div><div class="line">NSString * const TBHDXXXDidReceivedNotification = @&quot;TBHDXXXDidReceivedNotification&quot;;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p><strong>Exceptions:</strong>和上面的通知的命令方式很相似，遵循以下模式:<br><code>[Prefix] + [UniquePartOfName] + Exception</code>   </p>
+<blockquote>
+<ol>
+<li>NSRangeException</li>
+<li>NSInternalInconsistencyException</li>
+</ol>
+</blockquote>
+</li>
+<li><p><strong>其它常量变量:</strong>遵循<code>[Prefix] + [UniquePartOfName]</code>的命名准则。</p>
+<blockquote>
+<p>FOUNDATION_EXPORT NSString * const NSURLErrorDomain;</p>
+</blockquote>
+</li>
+<li><p><strong>UserDefaults:</strong>中的key值命名。</p>
+</li>
+<li>关于警告的处理：工具类、方法不使用的，可以使用注释或者<code>DEPRECATED</code>等宏定义做警告处理，后续逐步丢弃掉。</li>
+<li><p>关于常量相关的区分细节：</p>
+<blockquote>
+<ol>
+<li>#define PI @”3.14”:宏定义。预处理器文本替换，无类型检查；占用代码段地址，大量宏会导致二进制文件过大。</li>
+<li>NSString *PI = @”3.14”:变量。共享内存空间；编译阶段进行类型检查。</li>
+<li>static const NSString *PI = @”3.14”:局部常量。共享内存空间；用static修饰后，不能提供外界访问。</li>
+<li>const NSString <em>PI = @”3.14”:全局常量1。共享内存空间；”\</em> PI”不能被修改， “PI”能被修改；无论定义在哪个文件夹，外部均能访问。（需要调用时声明extern NSString *PI）</li>
+<li>NSString const <em>PI = @”3.14”:全局常量2。共享内存空间；”\</em> PI”不能被修改， “PI”能被修改，同全局常量1。</li>
+<li>NSString <em> const </em>PI = @”3.14”:全局常量3。共享内存空间；”PI”不能被修改，”* PI”能被修改。</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h2 id="二、格式规范"><a href="#二、格式规范" class="headerlink" title="二、格式规范"></a>二、格式规范</h2><ul>
+<li><p><strong>空格:</strong>合理使用空格，增加代码的可读性。</p>
+<blockquote>
+<ol>
+<li><code>NSArray *names = @[@&quot;a&quot;, @&quot;b&quot;];</code> ✓ </li>
+<li><code>NSArray *names = @[@&quot;a&quot;,@&quot;b&quot;];</code> ✗  </li>
+<li>Dictionary<br><code>NSDictionary *errorCodeMap = @{@&quot;0&quot;: @&quot;网络错误&quot;};</code>✓<br><code>NSDictionary *errorCodeMap = @{@&quot;0&quot;:@&quot;网络错误&quot;};</code>✗</li>
+<li>二元/三元运算符(Dot运算符例外,一元运算符以及强制类型转换无需空格)<br><code>if(a &amp;&amp; b) {}</code> ✓<br><code>if(a&amp;&amp;b) {}</code> ✗</li>
+<li>for循环中也应使用空格隔开<br><code>for (unsigned int i = 0; i &lt; 10; i++)...</code>✓<br><code>for (unsigned int i = 0;i &lt; 10;i++)...</code>✗</li>
+<li>方法声明中的 “－”和“＋”后面必须留空格<br><code>- (id)initWithCoder:(NSCoder *)aDecoder;</code> ✓<br><code>-(id)initWithCoder:(NSCoder *)aDecoder;</code> ✗</li>
+<li>方法调用的时候，receiver和method之间必须要有空格<br><code>[[NSUserDefaults standardUserDefaults] synchronize];</code>✓<br><code>[[NSUserDefaults standardUserDefaults]synchronize];</code>✗</li>
+<li>代码块的起始的<code>{</code>前要留一空格，else 前和<code>}</code>也要留一空格<br><code>if {..} else {..}</code></li>
+<li>注释内容和注释标志要有一个空格:<br><code>// momo</code></li>
+<li>逻辑比较复杂的功能修改，需要添加注释：时间，详细内容等。</li>
+</ol>
+</blockquote>
+</li>
+<li><p><strong>回车换行</strong>：</p>
+<blockquote>
+<ol>
+<li>代码之间不需要多余的回车，不超过2行回车。</li>
+<li>不同方法体添加一行回车即可。</li>
+<li>方法体内不同逻辑块之间加一行回车即可。</li>
+</ol>
+</blockquote>
+</li>
+<li><p><strong>{}大括号:</strong>左大括号不要另起一行，右大括号必须新起一行。即使只有一条语句。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">if(ok) &#123;</div><div class="line">	return success;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p><strong>?:条件运算符:</strong>严禁嵌套使用，否则代码的可读性会下降。</p>
+<blockquote>
+<ol>
+<li><code>a ? a : b</code>(此种情况也可写成<code>a ?: b</code>)✓   </li>
+<li><code>a ? (b &gt; c ? b : c) : d</code> ✗</li>
+</ol>
+</blockquote>
+</li>
+<li><p><strong>注释:</strong>注释本身也存在其相关语法，可以参考苹果的<a href="https://developer.apple.com/library/mac/documentation/developertools/Conceptual/HeaderDoc/intro/intro.html" target="_blank" rel="external">HeaderDoc User Guide</a>。</p>
+<blockquote>
+<ol>
+<li>不要进行大片的代码注释，直接删除它们。</li>
+</ol>
+</blockquote>
+</li>
+<li><p><strong>函数注释:</strong>针对文件或者函数进行详细解释格式。</p>
+<blockquote>
+<p>基本涵盖：名称、描述、入参、出参、返回值</p>
+</blockquote>
+</li>
+<li><p><strong>Option + command + /</strong>：函数注释   以及h文件中类的注释。方法体、函数体内部业务逻辑较复杂的需要单独添加注释。<br>  ​    </p>
+<h2 id="三、语法规范"><a href="#三、语法规范" class="headerlink" title="三、语法规范"></a>三、语法规范</h2></li>
+<li><p><code>NSArray，NSDictionary， NSNumber</code>能够使用新的文法的地方就使用新的文法:</p>
+<blockquote>
+<ol>
+<li><code>NSNumber *price = @1000;</code>  </li>
+<li><code>NSArray *names = @[@&quot;a&quot;, @&quot;b&quot;];</code> </li>
+<li><code>NSDictionary *errorCodeMap = @{@&quot;0&quot;: @&quot;网络错误&quot;, @&quot;1&quot;: @&quot;连接超时&quot;};</code></li>
+</ol>
+</blockquote>
+</li>
+<li><p><strong>CGRect函数:</strong>使用<a href="http://developer.apple.com/library/ios/#documentation/graphicsimaging/reference/CGGeometry/Reference/reference.html" target="_blank" rel="external">CGRect函数</a>来获取CGRect结构体中的数据,因为CGRect函数在计算结果前会对变量进行检查，比如对长宽进行检查，是否为正。</p>
+<blockquote>
+<p><code>CGFloat height = CGRectGetHeight(frame);</code> ✓<br><code>CGFloat height = frame.size.height;</code> ✗</p>
+</blockquote>
+</li>
+<li><p><strong>单例模式:</strong>统一使用<code>dispatch_once</code>的方式，这种方式简单，性能好，线程安全。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">+ (MyClass *)sharedInstance&#123;</div><div class="line">   	//  Static local predicate must be initialized to 0</div><div class="line">   	static MyClass *sharedInstance = nil;</div><div class="line">   	static dispatch_once_t onceToken;</div><div class="line">   	dispatch_once(&amp;onceToken, ^&#123;</div><div class="line">     	  sharedInstance = [[MyClass alloc] init];</div><div class="line">       	// Do any other initialisation stuff here</div><div class="line">   	&#125;);</div><div class="line">   	return sharedInstance;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="Ⅱ、文件规范"><a href="#Ⅱ、文件规范" class="headerlink" title="Ⅱ、文件规范"></a><span id="Ⅱ">Ⅱ、文件规范</span></h1><h2 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h2><ul>
+<li><p><strong>Utility和Helper:</strong>一些工具或者辅助类文件名的后缀。</p>
+<blockquote>
+<p><code>Utility</code>或 <code>Util</code>: 一般在使用的时候无需实例化，直接使用其类方法，是无状的。（因为属于Common类文件，所以不推荐使用）</p>
+<p><code>Helper</code>或<code>Builder</code>: 可以实例化，有状态的</p>
+</blockquote>
+</li>
+<li><p><strong>导入:</strong>头文件中能够不import（使用class声明即可）的时候就严谨import。</p>
+</li>
+<li><p><strong>h文件:</strong>布局方案详细</p>
+<blockquote>
+<ol>
+<li>头文件{}外，空1行书写属性，如果需要分类区别，各类别之间空1行</li>
+<li>属性下面空1行开始写方法，如果需要分类区别，各类别之间空1行</li>
+<li>方法完成后，空1行@end</li>
+<li>如果需要声明protocol，空2行接着写。通常protocol写在@end后面，但是声明在  @interface之前</li>
+</ol>
+</blockquote>
+</li>
+<li><p><strong>m文件:</strong>布局方案详细</p>
+<blockquote>
+<ol>
+<li>文件说明与头文件包含(#import)之间空1行</li>
+<li><p>头文件包含(#import)之间，如果需要分类区别，各类别之间空1行</p>
+</li>
+<li><p>方法与方法之间空1行</p>
+</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><ul>
+<li><p><strong>代码行数:</strong>一行最大为100列</p>
+</li>
+<li><p><strong>函数分组:</strong>使用类似<code>#pragma mark --- &lt;* text *&gt;---</code>方式进行分组</p>
+</li>
+</ul>
+<h4 id="分组详情"><a href="#分组详情" class="headerlink" title="分组详情:"></a>分组详情:</h4><ul>
+<li><p><strong>该分组模式业已提交code snippet，便于统一处理文件。</strong></p>
+<blockquote>
+<ul>
+<li>具体导入使用方法参考Github地址中<code>README说明</code>。</li>
+<li>github地址：<a href="https://github.com/PanZhow/snippets_tools" target="_blank" rel="external">snippets_tools</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<p><strong>根据<code>函数分组</code>方案，文件内部组织形式为：</strong></p>
+<ol>
+<li><code>- (void)dealloc{}</code></li>
+<li><p><code>#pragma mark --- public ---</code></p>
+<blockquote>
+<p>对外公开的方法，即在h文件中声明的方法</p>
+</blockquote>
+</li>
+<li><p><code>#pragma mark --- life cycle ---</code></p>
+<blockquote>
+<p><code>- (void)viewDidLoad{}</code></p>
+<p>一系列声明周期方法集合</p>
+</blockquote>
+</li>
+<li><p><code>#pragma mark --- delegate ---</code></p>
+<blockquote>
+<p>一系列<code>自定义/系统</code>代理方法</p>
+</blockquote>
+</li>
+<li><p><code>#pragma mark --- event ---</code></p>
+<blockquote>
+<p>如UIbutton点击事件</p>
+</blockquote>
+</li>
+<li><p><code>#pragma mark --- private ---</code></p>
+<blockquote>
+<p>相对<code>public</code>而言，只在m文件中使用的自定义方法</p>
+</blockquote>
+</li>
+<li><p><code>#pragma mark --- getter &amp; setter ---</code></p>
+<blockquote>
+<p>一系列<code>属性</code>定义方法</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="代码布局"><a href="#代码布局" class="headerlink" title="代码布局"></a>代码布局</h2><ul>
+<li><p>不想暴露于头文件的属性，可以使用类扩展(Class Extension，也即匿名Category)的方式进行声明。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">//PZMyClass.m文件中</div><div class="line">@interface PZMyClass ()</div><div class="line"></div><div class="line">@property (nonatomic, strong) UIView *myView;</div><div class="line"></div><div class="line">@end</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="Ⅲ、TODO："><a href="#Ⅲ、TODO：" class="headerlink" title="Ⅲ、TODO："></a>Ⅲ、<span id="Ⅲ">TODO：</span></h1><p>后续需要继续完善的部分（红色分支）：</p>
+<p><img src="规范V1.0.png" alt="pic"></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://iossun.github.io/2018/03/07/iOS app各种图片尺寸/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孙慕">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://www.mny9.com:80/images/users/VFMhAQ0AADE0NDkwMjkwMjA4MDV6_20170628151324.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mumu@note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/07/iOS app各种图片尺寸/" itemprop="url">iOS app各种图片尺寸</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-07T00:00:00+08:00">
+                2018-03-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/知识点/" itemprop="url" rel="index">
+                    <span itemprop="name">知识点</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/03/07/iOS app各种图片尺寸/" class="leancloud_visitors" data-flag-title="iOS app各种图片尺寸">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>####引导页：</p>
+<p>640 * 960</p>
+<p>640 *1136</p>
+<p>750 *1334</p>
+<p>1080 *1920</p>
+<p>####启动页：</p>
+<p>640 * 960</p>
+<p>640 *1136</p>
+<p>750 *1334</p>
+<p>768 *1024</p>
+<p>1242 *2208</p>
+<p>1536 *2048</p>
+<p>####上传appStore所需各分辨率图片：</p>
+<p>3.5   —————         640 * 960</p>
+<p>4  ——————         640 * 1136</p>
+<p>4.7  —————-        750 * 1334</p>
+<p>5.5  —————-       1242 * 2208</p>
+<p>5.8  —————-        1125 * 2436</p>
+<p>9.7   —————-        2048 * 1536</p>
+<p>12.9   —————        2732 * 2048</p>
+<p>####app图标所需尺寸集合：</p>
+<p>29*29</p>
+<p>40*40</p>
+<p>58*58</p>
+<p>76*76</p>
+<p>80*80</p>
+<p>87*87</p>
+<p>120*120</p>
+<p>152*152</p>
+<p>167*167</p>
+<p>180*180</p>
+<p>####app store上显示的icon图标尺寸：</p>
+<p>1024*1024</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://iossun.github.io/2018/03/01/tablview刷新列表偏移/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孙慕">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://www.mny9.com:80/images/users/VFMhAQ0AADE0NDkwMjkwMjA4MDV6_20170628151324.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mumu@note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/01/tablview刷新列表偏移/" itemprop="url">tablview刷新列表偏移</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-01T00:00:00+08:00">
+                2018-03-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/坑/" itemprop="url" rel="index">
+                    <span itemprop="name">坑</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/03/01/tablview刷新列表偏移/" class="leancloud_visitors" data-flag-title="tablview刷新列表偏移">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>IOS 11 tableView 分页 执行reload() 时出现偏移</p>
+<p>tableView 初始化的时候加入下面几行代码</p>
+<pre><code>tableView.estimatedRowHeight = 0;
+
+tableView.estimatedSectionFooterHeight = 0;
+
+tableView.estimatedSectionHeaderHeight = 0;
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://iossun.github.io/2018/02/07/需要再多点责任与担当/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孙慕">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://www.mny9.com:80/images/users/VFMhAQ0AADE0NDkwMjkwMjA4MDV6_20170628151324.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mumu@note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/07/需要再多点责任与担当/" itemprop="url">需要再多点责任与担当</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-07T00:00:00+08:00">
+                2018-02-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/杂谈日记/" itemprop="url" rel="index">
+                    <span itemprop="name">杂谈日记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/02/07/需要再多点责任与担当/" class="leancloud_visitors" data-flag-title="需要再多点责任与担当">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>快过年了，过完年就26岁了，和女朋友谈四年了，他家也去过好几次了，今年他爸又要请我去他家。</p>
+<p>我心里不愿意过去，女朋友又逼着我要去。我不愿意去估计是我想逃避吧。</p>
+<p>记得去年去她家，女朋友的母亲做了一桌子菜，女朋友姐姐，姐夫，一大家子人都在，场面太正式，心心隐隐的不安</p>
+<p>餐过半程，女朋友的父亲，果然开始提问了，先是家庭住址，家庭情况…一些无关紧要的问题，然后话锋一转：大概什么时候买房？</p>
+<p>气氛一下冷了下来，</p>
+<p>工作两年，在杭州生活，一个月余2，3千, 家境贫寒，父母供我和哥哥上完大学已经很不容易了</p>
+<p>买房结婚，一个沉重的问题</p>
+<p>在现实面前，我几次屈服，不想当误女朋友，现在给不了她一个家，也曾狠狠下定决心要分手。但都被女朋友的感化，她天真，善良，不在乎我的现在的境况</p>
+<p>对女朋友有很大愧疚，生活中多很多对她的体谅，不断在寻找对她补偿的机会，多包容她，自己努力干活，就这样生活着</p>
+<p>一年过去，靠着自己积极肯干，工资涨了不少,房价也疯涨了一年</p>
+<p>畏惧，忧患，前行……</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://www.mny9.com:80/images/users/VFMhAQ0AADE0NDkwMjkwMjA4MDV6_20170628151324.jpg"
+               alt="孙慕" />
+          <p class="site-author-name" itemprop="name">孙慕</p>
+           
+              <p class="site-description motion-element" itemprop="description">知识总结积累</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">41</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">孙慕</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
 
 
 
 
 
-  </div>
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("BaKu72zk5g7NY56Nrism5B5m-gzGzoHsz", "PtJC4e2EuqItIkCTOKeW6UCU");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>

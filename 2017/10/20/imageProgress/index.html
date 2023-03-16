@@ -1,0 +1,865 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="前段时间写了个图片上传或加载进度提示，当时在网上找了好久没找到好用的，后来花了点时间自己写了。现在总结下分享给大家下载">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SMImageProgress">
+<meta property="og:url" content="https://iossun.github.io/2017/10/20/imageProgress/index.html">
+<meta property="og:site_name" content="mumu@note">
+<meta property="og:description" content="前段时间写了个图片上传或加载进度提示，当时在网上找了好久没找到好用的，后来花了点时间自己写了。现在总结下分享给大家下载">
+<meta property="og:image" content="https://github.com/iossun/bolgImage/raw/master/SMImageProgress/SMImageProgress.002.jpg">
+<meta property="og:image" content="https://github.com/iossun/bolgImage/raw/master/SMImageProgress/SmImageProgress.gif">
+<meta property="og:image" content="https://github.com/iossun/bolgImage/raw/master/SMImageProgress/SMImageProgress.001.jpeg">
+<meta property="og:updated_time" content="2017-12-15T09:41:41.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SMImageProgress">
+<meta name="twitter:description" content="前段时间写了个图片上传或加载进度提示，当时在网上找了好久没找到好用的，后来花了点时间自己写了。现在总结下分享给大家下载">
+<meta name="twitter:image" content="https://github.com/iossun/bolgImage/raw/master/SMImageProgress/SMImageProgress.002.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://iossun.github.io/2017/10/20/imageProgress/"/>
+
+
+
+
+
+  <title>SMImageProgress | mumu@note</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">mumu@note</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">孜孜不倦，逆流而上</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://iossun.github.io/2017/10/20/imageProgress/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孙慕">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://www.mny9.com:80/images/users/VFMhAQ0AADE0NDkwMjkwMjA4MDV6_20170628151324.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mumu@note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">SMImageProgress</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-20T00:00:00+08:00">
+                2017-10-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/我的组件/" itemprop="url" rel="index">
+                    <span itemprop="name">我的组件</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/10/20/imageProgress/" class="leancloud_visitors" data-flag-title="SMImageProgress">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://github.com/iossun/bolgImage/raw/master/SMImageProgress/SMImageProgress.002.jpg" alt=""></p>
+<p>前段时间写了个图片上传或加载进度提示，当时在网上找了好久没找到好用的，后来花了点时间自己写了。现在总结下分享给大家<a href="https://github.com/iossun/SMImageProgress" target="_blank" rel="external">下载</a></p>
+<p><img src="https://github.com/iossun/bolgImage/raw/master/SMImageProgress/SmImageProgress.gif" alt=""></p>
+<a id="more"></a>
+<h5 id="核心类SMCircularProgressLayer"><a href="#核心类SMCircularProgressLayer" class="headerlink" title="核心类SMCircularProgressLayer"></a>核心类SMCircularProgressLayer</h5><h6 id="样式设置枚举"><a href="#样式设置枚举" class="headerlink" title="样式设置枚举"></a>样式设置枚举</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">typedef NS_OPTIONS(NSUInteger, SMCircularProgressStyle) &#123;</div><div class="line">SMCircularProgressStyleAnnular = 0,/* 环形线圈进去*/</div><div class="line">SMCircularProgressStylePieChart = 1,/* 饼形遮罩进度 */</div><div class="line">&#125;;</div><div class="line"></div><div class="line">typedef NS_OPTIONS(NSUInteger, SMCircularMaskType) &#123;</div><div class="line">     SMCircularMaskTypeBlack = 0,/* 默认 带有遮罩*/</div><div class="line">    SMCircularMaskTypeNone = 1,  /* 不带遮罩 */   </div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<h6 id="图形进度属性，设置颜色，大小，当前进度"><a href="#图形进度属性，设置颜色，大小，当前进度" class="headerlink" title="图形进度属性，设置颜色，大小，当前进度"></a>图形进度属性，设置颜色，大小，当前进度</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">/* 环形进度条颜色 */</div><div class="line">@property(nonatomic, strong) UIColor *progressTintColor;</div><div class="line">/* 内部圆形颜色 */</div><div class="line">@property(nonatomic, strong) UIColor *innerTintColor;</div><div class="line">/* 环形是否圆角 */</div><div class="line">@property(nonatomic,assign) BOOL roundedCorners;</div><div class="line">/* 环宽所占半径的比例 */</div><div class="line">@property(nonatomic,assign) CGFloat thicknessRatio;</div><div class="line">/* 加载进度 */</div><div class="line">@property(nonatomic,assign) CGFloat progress;</div><div class="line">/* 半径 */</div><div class="line">@property(nonatomic,assign) CGFloat radius;</div></pre></td></tr></table></figure>
+<h6 id="绘制原理"><a href="#绘制原理" class="headerlink" title="绘制原理"></a>绘制原理</h6><p>在drawInContext()里调用各种CoreGraphics的API,根据设置progress，不断重绘制，实现进度效果。对iOS绘图不了解的小伙伴，可以向想看看iOS基本图形绘制的api，画线，画矩形，画圆……这里不多介绍</p>
+<h5 id="SMCircularProgressView"><a href="#SMCircularProgressView" class="headerlink" title="SMCircularProgressView"></a>SMCircularProgressView</h5><p>继承UIView，绘制的layer展示的地方，初始化是初始化layer的默认设置</p>
+<p>代码也很好理解，重点介绍下消失的动画</p>
+<h6 id="进度视图消失动画"><a href="#进度视图消失动画" class="headerlink" title="进度视图消失动画"></a>进度视图消失动画</h6><p><img src="https://github.com/iossun/bolgImage/raw/master/SMImageProgress/SMImageProgress.001.jpeg" alt=""><br>mask 是CALayer类型的一个属性， mask属性本身就是个CALayer类型，有和其他图层一样的绘制和布局属性，CALayer 蒙版图实心的部分会被保留下来，其他的则会被抛弃。</p>
+<p>在绘制图层上加上mask层，设置mask图层动画（mask图层以图片中为圆心，绘制遮盖所有进度图层的圆，动画mask图层半径不变，宽度不断缩短，图层重叠缩小，可见图层可见不断缩小),就这么简单：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">CABasicAnimation *lineWidthAnimation = [CABasicAnimation animationWithKeyPath:NSStringFromSelector(@selector(lineWidth))];</div><div class="line">lineWidthAnimation.duration = 1;</div><div class="line">lineWidthAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];</div><div class="line">lineWidthAnimation.removedOnCompletion = NO;</div><div class="line">lineWidthAnimation.fillMode = kCAFillModeForwards;</div><div class="line">lineWidthAnimation.fromValue = @(2*finalRadius);</div><div class="line">lineWidthAnimation.toValue = @(fromLineWidth);</div><div class="line">lineWidthAnimation.delegate = self;</div><div class="line">[self.circlePathLayer addAnimation:lineWidthAnimation forKey:@&quot;strokeWidth&quot;];</div></pre></td></tr></table></figure>
+<h5 id="SMLabelCircularProgressView"><a href="#SMLabelCircularProgressView" class="headerlink" title="SMLabelCircularProgressView"></a>SMLabelCircularProgressView</h5><p>SMLabelCircularProgressView 继承SMCircularProgressView，在绘图基类上加上自定义视图</p>
+<h5 id="UIView-SMCircularProgress"><a href="#UIView-SMCircularProgress" class="headerlink" title="UIView+SMCircularProgress"></a>UIView+SMCircularProgress</h5><p>给UIView 添加属性，继承UIView都具备进度视图属性</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/05/HTTP须知/" rel="next" title="HTTP须知">
+                <i class="fa fa-chevron-left"></i> HTTP须知
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/11/10/SMTimeline/" rel="prev" title="SMTimeLine">
+                SMTimeLine <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://www.mny9.com:80/images/users/VFMhAQ0AADE0NDkwMjkwMjA4MDV6_20170628151324.jpg"
+               alt="孙慕" />
+          <p class="site-author-name" itemprop="name">孙慕</p>
+           
+              <p class="site-description motion-element" itemprop="description">知识总结积累</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">41</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#核心类SMCircularProgressLayer"><span class="nav-number">1.</span> <span class="nav-text">核心类SMCircularProgressLayer</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#样式设置枚举"><span class="nav-number">1.1.</span> <span class="nav-text">样式设置枚举</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#图形进度属性，设置颜色，大小，当前进度"><span class="nav-number">1.2.</span> <span class="nav-text">图形进度属性，设置颜色，大小，当前进度</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#绘制原理"><span class="nav-number">1.3.</span> <span class="nav-text">绘制原理</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#SMCircularProgressView"><span class="nav-number">2.</span> <span class="nav-text">SMCircularProgressView</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#进度视图消失动画"><span class="nav-number">2.1.</span> <span class="nav-text">进度视图消失动画</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#SMLabelCircularProgressView"><span class="nav-number">3.</span> <span class="nav-text">SMLabelCircularProgressView</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#UIView-SMCircularProgress"><span class="nav-number">4.</span> <span class="nav-text">UIView+SMCircularProgress</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">孙慕</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("BaKu72zk5g7NY56Nrism5B5m-gzGzoHsz", "PtJC4e2EuqItIkCTOKeW6UCU");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
